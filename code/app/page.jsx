@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Hero from "./components/hero";
 import Logos from "./components/logos";
 
 export default function Home() {
