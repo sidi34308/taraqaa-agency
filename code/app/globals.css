@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-.main {}
+.main {
+}
 
 .primary_btn {
-  background-color: #CEEC33;
-
+  background-color: #ceec33;
 }
 
 .primary_btn:hover {
@@ -22,8 +18,8 @@
   color: #fff;
 }
 
-
-h1 {}
+h1 {
+}
 
 .hero {
   width: 100%;
@@ -32,11 +28,9 @@ h1 {}
   background-image: url("/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .app {
-
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
@@ -64,7 +58,6 @@ h1 {}
 }
 
 .logos-slide img {
-
   height: 70px;
   margin: 0 40px;
 }
