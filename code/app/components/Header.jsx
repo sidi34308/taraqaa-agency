@@ -37,7 +37,7 @@ const Header = () => {
           <img
             src="/logo-main.svg"
             alt="sum_logo"
-            className="w-[10rem] p-1 object-contain"
+            className="w-[8rem] p-1 object-contain"
           />
         </div>
         <div className="hidden md:flex text-center items-center space-x-10 p-2">
@@ -62,7 +62,7 @@ const Header = () => {
         </div>
         <div className="md:hidden flex items-center">
           <button
-            className="text-black bg-[#CEEC33] p-2 rounded-full"
+            className="text-[#CEEC33] p-2 rounded-xl"
             onClick={toggleMenu}
           >
             <svg
@@ -82,8 +82,8 @@ const Header = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 p-4">
-            <ul className="text-white text-sm">
+          <div className="md:hidden absolute top-full  h-screen left-0 w-full bg-black   bg-opacity-90 p-4">
+            <ul className="h-screen pt-10 text-white text-center backdrop-blur-[0.1rem] text-2xl">
               <li className="mb-4">
                 <a
                   href="#about"

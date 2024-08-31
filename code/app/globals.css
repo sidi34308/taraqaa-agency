@@ -12,7 +12,9 @@
 .primary_btn:hover {
   background-color: #98b11b;
 }
-
+.blured {
+  backdrop-filter: blur(90%);
+}
 ::selection {
   background-color: #98b11b;
   color: #fff;
