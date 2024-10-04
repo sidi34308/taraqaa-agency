@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="title h-screen flex flex-col justify-center items-center text-center text-white">
         <h1 className=" text-6xl text-right sm:text-center font-bold mb-4 sm:w-3/5 leading-snug animate-fadeIn">
           أعد تعريف موقعك الإلكتروني وبرمجياتك مع{" "}
-          <span className="text-[#CEEC33]">تــرقى</span>
+          <span className="text-[#CEEC33]">تــــرقى</span>
         </h1>
 
         <p className="sm:text-lg text-sm text-right sm:text-center mb-8 max-w-md text-gray-300 leading-loose animate-fadeIn">

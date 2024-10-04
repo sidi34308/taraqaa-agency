@@ -16,7 +16,7 @@ export default function ClientLogos() {
               <img src={"/clientlogos/koora.png"} alt="" />
             </div>
             <div className=" marquee__item">
-              <img src={"/clientlogos/masdar.png"} alt="" />
+              <img src={"/clientlogos/Masdar.png"} alt="" />
             </div>
             <div className=" marquee__item">
               <img src={"/clientlogos/artistsai.png"} alt="" />
@@ -37,7 +37,7 @@ export default function ClientLogos() {
               <img src={"/clientlogos/koora.png"} alt="" />
             </div>
             <div className=" marquee__item">
-              <img src={"/clientlogos/masdar.png"} alt="" />
+              <img src={"/clientlogos/Masdar.png"} alt="" />
             </div>
             <div className=" marquee__item">
               <img src={"/clientlogos/artistsai.png"} alt="" />
