@@ -6,7 +6,7 @@ import Logos from "./components/logos";
 import Services from "./components/services";
 import Footer from "./components/Footer";
 import ClientLogos from "./components/ClientLogos";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 export default function Home() {
   return (
     <main
