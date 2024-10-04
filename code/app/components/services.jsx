@@ -29,7 +29,7 @@ const Services = () => {
     <section className="text-white bg-black py-12">
       <div className="w-full mx-auto  ">
         <h2 className="flex gap-4 sm:text-5xl text-4xl font-bold sm:mb-20 mb-8 sm:pr-40 pr-5">
-          <img src="star.svg" />
+          <img src="star.svg" className="animate-spin-slow" />
           خدماتنا
         </h2>
         <div className="space-y-8">

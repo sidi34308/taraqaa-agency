@@ -33,16 +33,16 @@ const Header = () => {
       }`}
     >
       <nav className="flex justify-around items-center w-full mb-1 backdrop-blur-[0.6rem] bg-[#000] bg-opacity-90 border-b border-[#363636] p-2 font-bold">
-        <div className="ml-10 ">
+        <a className="ml-10 " href="/">
           <img
             src="/logo-main.svg"
             alt="sum_logo"
             className="w-[8rem] p-1 object-contain"
           />
-        </div>
-        <div className="hidden md:flex text-center items-center space-x-10 p-2">
+        </a>
+        <div className="hidden md:flex text-center items-center gap-2 p-2">
           <a
-            href="#about"
+            href="/about_ar"
             className="text-white text-sm  p-3  rounded-full hover:bg-[#0C0C0C] transition duration-300"
           >
             من نحن
