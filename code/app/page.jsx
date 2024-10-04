@@ -6,6 +6,7 @@ import Logos from "./components/logos";
 import Services from "./components/services";
 import Footer from "./components/Footer";
 import ClientLogos from "./components/ClientLogos";
+import Contact from "./components/contact";
 export default function Home() {
   return (
     <main
@@ -19,6 +20,9 @@ export default function Home() {
       </section>
       <section>
         <ClientLogos />
+      </section>
+      <section>
+        <Contact />
       </section>
       <Footer />
     </main>

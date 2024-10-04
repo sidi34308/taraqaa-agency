@@ -10,8 +10,6 @@ export default function ClientLogos() {
     >
       <h1 className="text-white text-3xl">عملاؤنا</h1>
       <section className="enable-animation ">
-        <h2> </h2>
-
         <div className="marquee">
           <ul className="marquee__content">
             <div className=" marquee__item">
