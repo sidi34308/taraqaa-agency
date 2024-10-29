@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div
       className="bg-black"
-      style={{ direction: "rtl" }} // Ensure RTL text flow
+      // style={{ direction: "rtl" }} // Ensure RTL text flow
     >
       <Header />
       <TeamSlider />

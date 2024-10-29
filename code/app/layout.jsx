@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Cairo } from "next/font/google";
+import { Inter } from "next/font/google";
 import Head from "next/head";
 
-// Configure Cairo font
-const cairo = Cairo({
-  subsets: ["arabic"],
+// Configure Inter font
+const inter = Inter({
+  subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <title>Taraqaa</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className={cairo.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

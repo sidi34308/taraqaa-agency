@@ -42,22 +42,22 @@ const Header = () => {
         </a>
         <div className="hidden md:flex text-center items-center gap-2 p-2">
           <a
-            href="/about_ar"
+            href="/about"
             className="text-white text-sm  p-3  rounded-full hover:bg-[#0C0C0C] transition duration-300"
           >
-            من نحن
+            About Us
           </a>
           <a
             href="#services"
             className="text-white text-sm  p-3 rounded-full  hover:bg-[#0C0C0C] transition duration-300"
           >
-            خدماتنا
+            Our Services
           </a>
           <a
             href="#contact"
             className="text-white text-sm p-3  rounded-full  hover:bg-[#0C0C0C] transition duration-300"
           >
-            اتصل بنا
+            Contact Us
           </a>
         </div>
         <div className="md:hidden flex items-center">
@@ -90,7 +90,7 @@ const Header = () => {
                   onClick={toggleMenu}
                   className="hover:text-gray-300 transition duration-300"
                 >
-                  من نحن{" "}
+                  About Us
                 </a>
               </li>
               <li className="mb-4">
@@ -99,7 +99,7 @@ const Header = () => {
                   onClick={toggleMenu}
                   className="hover:text-gray-300 transition duration-300"
                 >
-                  خدماتنا
+                  Our Services
                 </a>
               </li>
               <li>
@@ -108,7 +108,7 @@ const Header = () => {
                   onClick={toggleMenu}
                   className="hover:text-gray-300 transition duration-300"
                 >
-                  اتصل بنا
+                  Contact Us
                 </a>
               </li>
             </ul>
