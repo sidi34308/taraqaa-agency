@@ -37,7 +37,7 @@ export default function ProjectGrid() {
 
   return (
     <div
-      className="bg-black min-h-screen mx-auto px-5 sm:px-10 lg:px-20 py-8"
+      className="bg-black min-h-screen mx-auto px-5 sm:px-10 lg:px-20 py-8 "
       ref={ref}
     >
       <h2 className="sm:pl-40 pl-5 text-white flex gap-4 sm:text-4xl lg:text-5xl text-3xl font-bold sm:mb-16 mb-8 items-center">

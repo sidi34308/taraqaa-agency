@@ -19,14 +19,14 @@ export default function Home() {
       <Header />
       <Hero />
 
-      <section>
+      <section id="services">
         <Services />
         <WhatsAppPopup />
       </section>
       <section>
         <ClientLogos />
       </section>
-      <section>
+      <section id="work">
         <ProjectGrid />
       </section>
       <section>

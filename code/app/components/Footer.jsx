@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mb-8 md:mb-0 flex flex-col justify-center items-center md:items-start">
           <ul className="space-y-4 text-center md:text-left">
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <a href="#work" className="hover:text-gray-400">
                 Our Work
               </a>
             </li>
@@ -20,7 +20,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <a
+                href="https://wa.me/97455229718"
+                target="_blank"
+                className="hover:text-gray-400"
+              >
                 Contact Us
               </a>
             </li>
@@ -55,7 +59,7 @@ export default function Footer() {
       {/* Social Media Section */}
       <div className="flex justify-center items-center space-x-6 mt-6">
         <a
-          href="https://www.linkedin.com/in/taraqaa"
+          href="https://www.linkedin.com/company/taraqaa/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"
@@ -65,7 +69,7 @@ export default function Footer() {
         </a>
 
         <a
-          href="https://www.instagram.com/taraqaa"
+          href="https://www.instagram.com/taraqaa.tech"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"

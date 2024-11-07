@@ -123,23 +123,6 @@ export default function Header() {
               >
                 Our Services
               </motion.a>
-              <motion.a
-                href="#contact"
-                className="text-white text-lg hover:text-[#CEEC33] transition duration-300"
-                onClick={toggleMenu}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Contact Us
-              </motion.a>
-              <motion.button
-                className="bg-[#CEEC33] text-black font-bold py-2 px-6 rounded-full hover:bg-[#b8d42e] transition duration-300"
-                onClick={toggleMenu}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started
-              </motion.button>
             </div>
           </motion.div>
         )}
