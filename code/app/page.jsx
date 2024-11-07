@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import ClientLogos from "./components/ClientLogos";
 import Contact from "./components/Contact";
 import Testimonials from "./components/testimonials";
+import ProjectGrid from "./components/ProjectGrid";
+import WhatsAppPopup from "./components/WhatsAppPopup";
 export default function Home() {
   return (
     <main
@@ -16,11 +18,16 @@ export default function Home() {
     >
       <Header />
       <Hero />
+
       <section>
         <Services />
+        <WhatsAppPopup />
       </section>
       <section>
         <ClientLogos />
+      </section>
+      <section>
+        <ProjectGrid />
       </section>
       <section>
         {/* <Testimonials /> */}

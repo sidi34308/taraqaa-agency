@@ -13,9 +13,69 @@ body {
 .primary_btn {
   background-color: #ceec33;
 }
-
+.sec_btn {
+  border: 2px solid none;
+}
+/* 
 .primary_btn:hover {
   background-color: #98b11b;
+} */
+
+/* From Uiverse.io by cssbuttons-io */
+button {
+  --color: #ceec33;
+  font-family: inherit;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  border-radius: 6px;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: black;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #ceec33;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #000000;
+  transition: background 0s;
+}
+.nonee:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: transparent;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.nonee:active:before {
+  background: transparent;
+  transition: background 0s;
 }
 .blured {
   backdrop-filter: blur(90%);

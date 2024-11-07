@@ -4,65 +4,47 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Maria T.",
-    position: "Co-founder of NexGen Apps",
+    name: "Mohamed Chaikh",
+    position: "Presdental candidate Mauritania 2024",
     image: "/profile-images/profile1.png", // Replace with actual path
     feedback:
-      "Paul delivered beyond our expectations. Not only did they create a beautiful and functional product, but he also provided invaluable design insights. His passion for design really shows in the final result.",
+      "The strategic approach to software development and branding significantly elevated our digital presence and boosted social media engagement.",
   },
   {
-    name: "Jake R.",
-    position: "Product Manager at TechWave",
-    image: "/profile-images/profile1.png", // Replace with actual path
+    name: "Ahmed Al-Fahad",
+    position: "Creative Director at AlMansoori Digital",
+    image: "/profile-images/profile3.png", // Replace with actual path
     feedback:
-      "Paul transformed our outdated website into a modern, intuitive platform. The process was seamless from start to finish, and his design has significantly improved our user experience. We couldn’t be happier!",
+      "Their work on our branding and software solutions was exceptional. Attention to detail and innovative ideas gave us a competitive edge.",
   },
 ];
+
 const testimonials_row2 = [
   {
-    name: "Maria T.",
-    position: "Co-founder of NexGen Apps",
-    image: "/profile-images/profile1.png", // Replace with actual path
+    name: "Youssef B.",
+    position: "Founder of YB Technologies",
+    image: "/profile-images/profile2.png", // Replace with actual path
     feedback:
-      "Paul delivered beyond our expectations. Not only did they create a beautiful and functional product, but he also provided invaluable design insights. His passion for design really shows in the final result.",
+      "They helped streamline operations and boosted our brand visibility through expertise in software development and social media management.",
   },
   {
-    name: "Jake R.",
-    position: "Product Manager at TechWave",
-    image: "/profile-images/profile1.png", // Replace with actual path
+    name: "Nasser",
+    position: "Brand Strategist at Nasser Marketing",
+    image: "/profile-images/profile.png", // Replace with actual path
     feedback:
-      "Paul transformed our outdated website into a modern, intuitive platform. The process was seamless from start to finish, and his design has significantly improved our user experience. We couldn’t be happier!",
+      "Their approach to branding and software solutions improved user experience and social media engagement while simplifying our internal processes.",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="text-white relative bg-black py-16 h-[150vh] flex flex-col  md:flex-col gap-12">
-      <div className=" absolute w-[100px] sm:w-[251px] z-30 h-full left-0 gradient"></div>
+    <section className="text-white relative bg-black py-20  flex flex-col justify-center  md:flex-col gap-12">
+      {/* <div className=" absolute w-[100px] sm:w-[251px] z-30 h-full left-0 gradient"></div> */}
+      <h2 className="sm:pl-40 pl-5 text-white flex gap-4 sm:text-4xl lg:text-5xl text-3xl font-bold sm:mb-16 mb-8 items-center">
+        <img src="star.svg" className="animate-spin-slow" />
+        What our client thinks about us
+      </h2>
 
-      {/* Left side */}
-      {/* <div className="flex-1">
-        <div className="mb-4">
-          <span className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm">
-            Testimonials
-          </span>
-        </div>
-        <h2 className="text-4xl sm:text-5xl font-bold leading-snug mb-4">
-          See what others <span className="text-white">say</span> about me
-        </h2>
-        <p className="text-gray-400 mb-8">
-          I have helped many businesses make a killer design for their product.
-          Wanna be the next?
-        </p>
-        <a
-          href="/contact"
-          className="inline-flex items-center px-6 py-3 border border-white text-white rounded-full font-bold hover:bg-white hover:text-black transition duration-300"
-        >
-          Contact <span className="ml-2">→</span>
-        </a>
-      </div> */}
-
-      {/* Right side - Testimonials */}
       <div className="  enable-animation  ">
         <div className="marquee_testimpnials">
           <ul className="marquee__content_testimpnials h-[40vh]">
@@ -184,7 +166,7 @@ export default function Testimonials() {
           </ul>
         </div>
       </div>
-      <div className=" absolute w-[100px] sm:w-[251px] z-30 h-full right-0 gradient_reverse"></div>
+      {/* <div className=" absolute w-[100px] sm:w-[251px] z-30 h-full right-0 gradient_reverse"></div> */}
     </section>
   );
 }

@@ -1,44 +1,38 @@
-"use client"; // For client-side interactivity
-
+"use client";
 import { useEffect } from "react";
 
 export default function useSmoothScroll() {
   useEffect(() => {
-    let scrollTimeout;
+    let isScrolling;
+    let lastPosition = 0;
 
-    const smoothScroll = (event) => {
-      // Prevent the default scrolling
-      event.preventDefault();
+    function easeOut(t) {
+      return t * (2 - t);
+    }
 
-      // Clear previous scroll timeout to avoid overlapping animations
-      clearTimeout(scrollTimeout);
+    function onScroll() {
+      if (isScrolling) {
+        cancelAnimationFrame(isScrolling);
+      }
 
-      // Get the current scroll position
-      let scrollPosition = window.scrollY || window.pageYOffset;
+      const currentPosition = window.scrollY;
 
-      // Calculate the target scroll based on the event delta
-      let scrollTarget = scrollPosition + event.deltaY * 0.2; // Adjust multiplier to control speed
+      function smoothScroll() {
+        const distance = currentPosition - lastPosition;
+        if (Math.abs(distance) < 1) return;
 
-      // Smoothly animate to the target scroll position
-      scrollTimeout = setInterval(() => {
-        scrollPosition += (scrollTarget - scrollPosition) * 0.1; // Adjust to control easing
+        lastPosition += easeOut(0.1) * distance;
+        window.scrollTo(0, lastPosition);
+        isScrolling = requestAnimationFrame(smoothScroll);
+      }
 
-        window.scrollTo(0, scrollPosition);
+      smoothScroll();
+    }
 
-        // Stop the animation when close enough to the target
-        if (Math.abs(scrollTarget - scrollPosition) < 0.5) {
-          clearTimeout(scrollTimeout);
-        }
-      }, 16); // Run the loop every 16ms (~60fps)
-    };
+    window.addEventListener("scroll", onScroll);
 
-    // Add the scroll event listener
-    window.addEventListener("wheel", smoothScroll, { passive: false });
-
-    // Cleanup when the component is unmounted
     return () => {
-      window.removeEventListener("wheel", smoothScroll);
-      clearTimeout(scrollTimeout);
+      window.removeEventListener("scroll", onScroll);
     };
   }, []);
 }

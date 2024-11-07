@@ -44,8 +44,8 @@ export default function TeamSlider() {
     <div className="h-full text-white py-16 pt-40">
       <div className="text-left mb-8 px-20 sm:px-40">
         <div className="flex mb-12 gap-4 sm:px-40">
-          <img src="/star.svg" className="animate-spin-slow w-14" />
-          <h2 className="text-6xl font-bold">About Us</h2>
+          <img src="/star.svg" className="animate-spin-slow w-8 sm:w-14" />
+          <h2 className="text-3xl sm:text-6xl font-bold">About Us</h2>
         </div>
         <p className="max-w-xl mx-auto">
           Taraqaa Agency is a digital design and development agency based in
