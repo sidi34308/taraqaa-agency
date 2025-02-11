@@ -29,14 +29,14 @@ export default function Contact() {
           Ready to elevate your digital presence?
         </motion.h2>
 
-        <motion.p
+        {/* <motion.p
           className="text-gray-300 text-lg sm:text-2xl text-center mb-8"
           variants={containerVariant}
           transition={{ delay: 0.2 }}
         >
           Let’s discuss how <span className="text-[#CEEC33]">Taraqaa</span> can
           help bring your vision to life.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div variants={containerVariant} transition={{ delay: 0.4 }}>
           <button
