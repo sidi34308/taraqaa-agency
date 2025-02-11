@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Redesign and Develop Your Websites",
+    title: "UI/UX and Software Development",
     description:
       "Unleash your creativity online with innovative design and development solutions",
   },

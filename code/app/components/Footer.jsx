@@ -34,13 +34,13 @@ export default function Footer() {
         {/* Center section: Contact details */}
         <div className="text-center md:text-left mb-2 md:mb-0">
           <p className="mb-2">
-            <strong></strong>{" "}
+            <strong>Email:</strong>{" "}
             <a href="mailto:info@taraqaa.com" className="hover:text-gray-400">
               info@taraqaa.com
             </a>
           </p>
           <p className="mb-4">
-            <strong></strong>{" "}
+            <strong>Phone:</strong>{" "}
             <a href="tel:+97455229718" className="hover:text-gray-400">
               +974 55229718
             </a>

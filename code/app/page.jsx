@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Testimonials from "./components/testimonials";
 import ProjectGrid from "./components/ProjectGrid";
 import WhatsAppPopup from "./components/WhatsAppPopup";
+import FQA from "./components/FQA";
+
 export default function Home() {
   return (
     <main
@@ -29,13 +31,14 @@ export default function Home() {
       <section id="work">
         <ProjectGrid />
       </section>
+      <section>{/* <Testimonials /> */}</section>
       <section>
-        {/* <Testimonials /> */}
-        <Testimonials />
+        <FQA />
       </section>
       <section>
         <Contact />
       </section>
+
       <Footer />
     </main>
   );

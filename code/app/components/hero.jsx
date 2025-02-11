@@ -99,9 +99,12 @@ const Hero = () => {
             Contact Us
           </button>
 
-          <button className=" border-none   text-white font-bold py-3 px-4 rounded-full">
+          <a
+            href="#services"
+            className=" border-none   text-white  py-3 px-4 rounded-full"
+          >
             Our Services
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
